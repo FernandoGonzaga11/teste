@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Exemplo das principais tags HTML">
+	<title>Principais Tags HTML</title>
+</head>
+<body>
+	<header>
+		<h1>Principais Tags do HTML</h1>
+		<p>Uma página de exemplo com elementos HTML essenciais.</p>
+		<nav aria-label="Navegação principal">
+			<a href="#texto">Texto</a> |
+			<a href="#listas">Listas</a> |
+			<a href="#midia">Mídia</a> |
+			<a href="#formulario">Formulário</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="texto">
+			<h2>Texto e semântica</h2>
+			<p>Este é um <strong>texto importante</strong> com <em>ênfase</em>, <mark>marcação</mark> e <small>texto menor</small>.</p>
+			<p>Também podemos usar <abbr title="HyperText Markup Language">HTML</abbr>, <code>&lt;p&gt;</code> e a tecla <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+			<blockquote cite="https://www.w3.org/">
+				HTML estrutura o conteúdo da web.
+			</blockquote>
+			<hr>
+			<pre><code>&lt;h1&gt;Título&lt;/h1&gt;
+&lt;p&gt;Parágrafo&lt;/p&gt;</code></pre>
+		</section>
+
+		<section id="listas">
+			<h2>Listas e tabela</h2>
+			<h3>Lista não ordenada</h3>
+			<ul>
+				<li>Estrutura</li>
+				<li>Conteúdo</li>
+				<li>Semântica</li>
+			</ul>
+			<h3>Lista ordenada</h3>
+			<ol>
+				<li>Planejar</li>
+				<li>Desenvolver</li>
+				<li>Testar</li>
+			</ol>
+			<dl>
+				<dt>HTML</dt>
+				<dd>Linguagem de marcação para páginas web.</dd>
+			</dl>
+			<table border="1">
+				<caption>Exemplo de tabela</caption>
+				<thead><tr><th>Tag</th><th>Uso</th></tr></thead>
+				<tbody><tr><td>&lt;h1&gt;</td><td>Título principal</td></tr><tr><td>&lt;p&gt;</td><td>Parágrafo</td></tr></tbody>
+			</table>
+		</section>
+
+		<section id="midia">
+			<h2>Mídia e conteúdo incorporado</h2>
+			<figure>
+				<img src="https://via.placeholder.com/320x160" alt="Imagem ilustrativa" width="320" height="160">
+				<figcaption>Legenda da imagem.</figcaption>
+			</figure>
+			<audio controls><source src="audio.mp3" type="audio/mpeg">Seu navegador não suporta áudio.</audio>
+			<br>
+			<video controls width="320"><source src="video.mp4" type="video/mp4">Seu navegador não suporta vídeo.</video>
+		</section>
+
+		<section id="formulario">
+			<h2>Formulário</h2>
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Entre em contato</legend>
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" name="nome" required>
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" name="email" required>
+					<label for="assunto">Assunto:</label>
+					<select id="assunto" name="assunto"><option>Dúvida</option><option>Sugestão</option></select>
+					<label for="mensagem">Mensagem:</label>
+					<textarea id="mensagem" name="mensagem" rows="4"></textarea>
+					<button type="submit">Enviar</button>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2025 - Exemplo de HTML</p>
+	</footer>
+</body>
+</html>
